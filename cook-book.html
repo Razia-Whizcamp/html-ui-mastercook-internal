@@ -1,0 +1,1365 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <style>
+    .slider {
+      width: auto;
+      margin: 30px 50px 50px;
+    }
+
+    .slider .slick-slide {
+      /* background: #292e3e; */
+      color: white;
+      padding: 40px 0;
+      font-size: 30px;
+      font-family: "Arial", "Helvetica";
+      text-align: center;
+    }
+
+    .slider .slick-prev:before,
+    .slider .slick-next:before {
+      color: #292e3e;
+    }
+
+    .slider .slick-dots {
+      bottom: -30px;
+    }
+
+    .slider .slick-slide:nth-child(odd) {
+      /* background: #57C09F; */
+    }
+
+    button.slick-next.slick-arrow {
+      display: none !important;
+    }
+
+    .btn-check:checked+.btn,
+    .btn.active,
+    .btn.show,
+    .btn:first-child:active,
+    :not(.btn-check)+.btn:active {
+      color: transparent;
+      background-color: transparent;
+      border-color: none;
+    }
+  </style>
+  <link rel="stylesheet" href="./css/Cook-book.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+
+<body>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-12 col-xl-12 col-xxl-12 col-md-12">
+          <div>
+            <div class="searching">
+              <span class="search-icon"><i class="fa-solid fa-magnifying-glass">
+                </i></span><input type="text" placeholder="Search">
+            </div>
+          </div>
+          <!-- slick -->
+          <section class="slider">
+
+            <div>
+              <div class="recipe-box d-flex">
+
+                <div class="box-1">
+                  <div class="box-border">
+                    <p class="import"><u>Import Cookbook</u>
+                    <p class="or-cen">or</span></p>
+                    <input type="file" id="upload" hidden />
+                    <label for="upload" class="cook-book">Create new cookbook</label>
+                    <!-- <button class="cook-book" for="upload">Create new cookbook</button> -->
+
+                  </div>
+                </div>
+
+
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/noodle-recipe.png" alt="noodle-recipe">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Snacks</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/receipe-ginger.png" alt="receipe-ginger">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Chicken recipe</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/green-tea.png" alt="green-tea">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Quick Meals</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+
+                <div class="box-2 chicken-recipe">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/receipe-ginger.png" alt="receipe-ginger">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Chicken recipe</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+              </div>
+              <!-- break -->
+
+              <div class="recipe-box d-flex pt-4">
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/green-tea.png" alt="green-tea">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para"> Quick Meals</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/noodle-recipe.png" alt="noodle-recipe">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Snacks</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/receipe-ginger.png" alt="receipe-ginger">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Chicken recipe</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/noodle-recipe.png" alt="noodle-recipe">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Snacks</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+
+                <div class="box-2 chicken-recipe">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/receipe-ginger.png" alt="receipe-ginger">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Chicken recipe</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+              </div>
+
+
+            </div>
+            <div>
+              <div class="recipe-box d-flex">
+
+                <div class="box-1">
+                  <div class="box-border">
+                    <p class="import"><u>Import Cookbook</u>
+                    <p class="or-cen">or</span></p>
+                    <input type="file" id="upload" hidden />
+                    <label for="upload" class="cook-book">Create new cookbook</label>
+                    <!-- <button class="cook-book">Create new cookbook</button> -->
+
+                  </div>
+                </div>
+
+
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/noodle-recipe.png" alt="noodle-recipe">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Snacks</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/receipe-ginger.png" alt="receipe-ginger">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Chicken recipe</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/green-tea.png" alt="green-tea">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Quick Meals</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+
+                <div class="box-2 chicken-recipe">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/receipe-ginger.png" alt="receipe-ginger">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Chicken recipe</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+              </div>
+              <!-- break -->
+
+              <div class="recipe-box d-flex pt-4">
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/green-tea.png" alt="green-tea">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para"> Quick Meals</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/noodle-recipe.png" alt="noodle-recipe">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Snacks</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/receipe-ginger.png" alt="receipe-ginger">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Chicken recipe</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+                </div>
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/noodle-recipe.png" alt="noodle-recipe">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Snacks</p>
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+                </div>
+                <div class="box-2 chicken-recipe">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/receipe-ginger.png" alt="receipe-ginger">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Chicken recipe</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="recipe-box d-flex">
+
+                <div class="box-1 reduce">
+                  <div class="box-border">
+                    <p class="import"><u>Import Cookbook</u>
+                    <p class="or-cen">or</span></p>
+                    <input type="file" id="upload" hidden />
+                    <label for="upload" class="cook-book">Create new cookbook</label>
+                    <!-- <button class="cook-book">Create new cookbook</button> -->
+                  </div>
+                </div>
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/noodle-recipe.png" alt="noodle-recipe">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Snacks</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/receipe-ginger.png" alt="receipe-ginger">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Chicken recipe</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+                </div>
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/green-tea.png" alt="green-tea">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Quick Meals</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+
+                <div class="box-2 chicken-recipe">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/receipe-ginger.png" alt="receipe-ginger">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Chicken recipe</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+              </div>
+              <!-- break -->
+
+              <div class="recipe-box d-flex pt-4">
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/green-tea.png" alt="green-tea">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para"> Quick Meals</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/noodle-recipe.png" alt="noodle-recipe">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Snacks</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/receipe-ginger.png" alt="receipe-ginger">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Chicken recipe</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+
+                <div class="box-2">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/noodle-recipe.png" alt="noodle-recipe">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Snacks</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+
+                <div class="box-2 chicken-recipe">
+                  <div class="d-flex justify-content-center bowl-box">
+                    <img src="./Assets/Images/receipe-ginger.png" alt="receipe-ginger">
+                  </div>
+                  <div class="snack-content d-flex justify-content-between mt-2">
+                    <div class="snack-heading">
+                      <p class="snack-para">Chicken recipe</p>
+
+                    </div>
+                    <div class="sign-heading">
+                      <p><span class="sharing-icon"><img src="./Assets/Images/arrow-sign.png" alt="arrow-sign"></span>
+                        <span>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between recipe-means">
+
+                    <div>
+                      <p class="recipe-content">26 recipe’s</p>
+                    </div>
+                    <div>
+                      <p class="recipe-time">Created: 5 days ago</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn open-book">Open cookbook</button>
+
+                </div>
+
+              </div>
+              <!-- </div>
+                <div>slider 5</div>
+                <div>slider 6</div>
+                <div>slider 7</div>
+                <div>slider 8</div> -->
+          </section>
+
+
+
+        </div>
+
+
+        <div class="bottom-app">
+          <div class="res-app1">
+            <!-- <img src="./Assets/Images/Frame 13.png" alt="frame13"> -->
+             <a href="index.html">
+              <img src="./Assets/Images/Frame 13.png" alt="frame13">
+             </a>
+
+          </div>
+          <div class="res-app2">
+            <!-- <img src="./Assets/Images/frame-10.png" alt="frame-13"> -->
+            <a href="index.html">
+              <img src="./Assets/Images/frame-10.png" alt="frame-13">
+             </a>
+
+
+          </div>
+          <div class="res-app3">
+            <!-- <img src="./Assets/Images/frame-11.png" alt="frame-11"> -->
+            <a href="index.html">
+              <img src="./Assets/Images/frame-11.png" alt="frame-11">
+
+             </a>
+
+
+          </div>
+          <div class="res-app4">
+            <!-- <img src="./Assets/Images/frame-12.png" alt="frame-12"> -->
+            <a href="index.html">
+              <img src="./Assets/Images/frame-12.png" alt="frame-12">
+
+             </a>
+
+
+
+          </div>
+          <div class="app-pic5">
+            <!-- <img src="./Assets/Images/frame-13.png" alt="frame-13"> -->
+            <a href="index.html">
+              <img src="./Assets/Images/frame-13.png" alt="frame-13">
+             
+
+             </a>
+
+
+          </div>
+          <div class="app-pic6">
+            <!-- <img src="./Assets/Images/frame-14.png" alt="frame-14"> -->
+            <a href="index.html">
+              <img src="./Assets/Images/frame-14.png" alt="frame-14">
+             </a>
+
+
+          </div>
+          <div class="app-pic7">
+            <!-- <img src="./Assets/Images/frame-9.png" alt="frame-9"> -->
+
+            <a href="index.html">
+              <img src="./Assets/Images/frame-9.png" alt="frame-9"> 
+             </a>
+
+          </div>
+          <div class="app-pic8">
+            <!-- <img src="./Assets/Images/frame-15.png" alt="frame-15"> -->
+            <a href="index.html">
+              <img src="./Assets/Images/frame-15.png" alt="frame-15">
+             </a>
+
+          </div>
+          <div class="app-pic8">
+            <!-- <img src="./Assets/Images/frame-16.png" alt="frame-16"> -->
+            <a href="index.html">
+              <img src="./Assets/Images/frame-16.png" alt="frame-16">
+             </a>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(() => {
+      var createSlick = () => {
+        let slider = $(".slider");
+
+        slider.not('.slick-initialized').slick({
+          autoplay: false,
+          infinite: true,
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                adaptiveHeight: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      }
+
+      createSlick();
+
+      $(window).on('resize orientationchange', createSlick);
+    })
+
+
+
+
+  </script>
+
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

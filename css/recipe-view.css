@@ -1,0 +1,894 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.apple-logo i {
+    color: white;
+}
+
+body {
+    background-image: url("../Assets/Images/banner-bg.png");
+    height: 200vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+
+}
+
+nav.navbar.navbar-expand-lg {
+    background: #0000002E;
+    background-blend-mode: darken;
+}
+
+li.nav-item {
+    list-style: none;
+}
+
+.items-date {
+    color: #FFFFFF;
+}
+
+a.nav-link.active {
+    color: #FFFFFF;
+}
+
+a.nav-link {
+    color: #ffffff;
+}
+
+a.nav-link.active.app {
+    color: #ffffff;
+}
+
+nav.navbar.navbar-expand-lg {
+    height: 24px;
+}
+
+.back-btn {
+    width: 20px;
+}
+
+
+.list-group.list-group-flush.border-bottom.scrollarea {
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.searchbar input {
+    width: 320px;
+    height: 22px;
+    padding: 3px 7px 3px 7px;
+    gap: 5px;
+    border-radius: 5px;
+    opacity: 0.4px;
+    box-shadow: 0px 0px 0px 0.5px #0000000D;
+    box-shadow: 0px 0.5px 2.5px 0px #0000004D;
+    background-color: #E0E0E0;
+    border: 0;
+}
+
+span.search-icon {
+    position: absolute;
+    left: 6%;
+    text-align: center;
+}
+
+input[type="text"]::placeholder {
+    padding-left: 30px;
+
+}
+
+.searchbar i {
+    color: grey;
+}
+
+.meal-heading {
+    width: 320px;
+    height: 90px;
+    padding: 10px 9px 10px 9px;
+    gap: 12px;
+    border-radius: 12px;
+    border: 1px;
+    opacity: 0px;
+    border: 1px solid #BDBDBD;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 8px 0px #00000066;
+
+}
+
+.meal-box {
+    width: 100px;
+}
+
+.recipe-count {
+
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #828282;
+    padding-top: 17px;
+}
+
+.recipe-day {
+
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #828282;
+    padding-top: 29px;
+
+}
+
+.meals-des {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: left;
+    color: #333333;
+
+}
+
+.arrow-heading {
+    padding-left: 50px;
+}
+
+/* new-try */
+.meal-headings {
+    width: 320px;
+    height: 90px;
+    padding: 10px 9px 10px 9px;
+    gap: 12px;
+    border-radius: 12px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #BDBDBD;
+    box-shadow: 0px 0px 8px 0px #00000066;
+    margin-left: 18px;
+
+
+}
+
+.recipe-26 {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #828282;
+
+
+}
+
+.recipe-5 {
+
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #828282;
+}
+
+.meal-heading.d-flex.bg-white {
+    margin-left: 14px;
+    margin-top: 16px;
+}
+
+.list-group.list-group-flush.border-bottom.scrollarea {
+    background-color: white;
+}
+
+.recipe-name {
+    font-size: 10px;
+}
+
+/* 
+nav.navbar.navbar-expand-lg.bg-body-tertiary{
+    position: fixed;
+    top: 6%;
+    left: 19%;
+    height: 62px;
+    width: 158%
+}
+.d-flex.flex-column.align-items-stretch.flex-shrink-0.bg-body-tertiary{
+    margin-top: 10px;
+} */
+
+
+nav.navbar.navbar-expand-lg.bg-body-tertiary.top-nav {
+    height: 50px;
+}
+
+a.navbar-brand {
+    padding-left: 30px;
+}
+
+.cuisine-tab {
+    width: 1, 152px;
+    height: 62px;
+    top: 24px;
+    left: 360px;
+    padding: 20px 16px 20px 16px;
+    gap: 113px;
+    border: 0px 0px 1px 1px;
+    opacity: 0px;
+    background: #FFFFFF;
+    border-width: 0px, 0px, 1px, 1px;
+
+    border-style: 1px solid black;
+
+    border-color: #E0E0E0;
+}
+
+
+.box-border {
+    width: 235px;
+    height: 200px;
+    padding: 36px 24px 36px 24px;
+    gap: 14px;
+    border-radius: 8px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+    border: 1px dashed #828282;
+    text-align: center;
+}
+
+
+button.cook-book.btn {
+    width: 150px;
+    height: 36px;
+    padding: 6px 9.5px 6px 9.5px;
+    gap: 0px;
+    border-radius: 5px;
+    opacity: 0px;
+    background-color: #E01010;
+    box-shadow: 0px 0px 0px 0.5px #007AFF1F;
+
+    box-shadow: 0px 1px 2.5px 0px #007AFF3D;
+    color: white;
+
+
+}
+
+.view-receipe {
+    width: 280px;
+    height: 400px;
+    padding: 10px 0px 0px 0px;
+    gap: 16px;
+    border-radius: 12px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: #FFFFFFF5;
+    border: 1px solid #BDBDBD;
+    position: relative;
+
+}
+
+.chiks img {
+    width: 255px;
+}
+
+button.btn.btn-danger {
+    width: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.butterchicken-heading {
+
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: left;
+    color: #333333;
+}
+
+.butterchicken-content {
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: justify;
+    color: #828282;
+    padding: 0 18px;
+}
+
+.reviews {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #828282;
+
+
+}
+
+.reviews-day {
+
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #828282;
+}
+
+.timing {
+    background: #33333380;
+    color: white;
+    position: absolute;
+    top: 39%;
+    width: 252px;
+    left: 5%;
+    height: 35px;
+    padding: 4px 0px 4px 0px;
+    gap: 10px;
+    border-radius: 0px 0px 8px 8px;
+    opacity: 0px;
+
+}
+
+.clock-icon {
+
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #FEFEFE;
+    padding-top: 5px;
+
+
+}
+
+.dish-icon {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #FEFEFE;
+    padding-top: 5px;
+
+}
+
+nav.navbar.navbar-expand-lg.bg-body-tertiary.top-nav.fixed-top {
+    margin-top: 27px;
+}
+
+.main {
+    margin-top: 82px;
+}
+
+.second-section {
+    margin-top: 20px;
+}
+
+.hero-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 75px;
+}
+
+section.cookview-section {
+    margin-top: 2rem;
+    width: 50%;
+    height: 200vh;
+    background-color: white;
+    border-radius: 10px
+}
+
+
+/* side-bar-fixed */
+
+
+.fixed-sidebar {
+    position: fixed;
+    top: 8%;
+    left: 0;
+    height: 100%;
+    /* overflow: auto; */
+    width: 380px;
+    z-index: 1030;
+}
+
+body {
+    margin-left: 380px;
+    /* Width of the sidebar */
+}
+
+/* 
+ /* buttons */
+button.btn.btn-secondary.dropdown-toggle.cusines {
+    width: 90px;
+    height: 30px;
+    padding: 3px 3px 3px 7px;
+    gap: 10px;
+    border-radius: 5px;
+    opacity: 0px;
+    background: #FEFEFE;
+    box-shadow: 0px 0px 0px 0.5px #0000000D;
+
+    box-shadow: 0px 0.5px 2.5px 0px #0000004D;
+    color: black;
+    border: 0;
+    margin-right: 20px;
+}
+
+button.btn.btn-secondary.dropdown-toggle.rating {
+    width: 120px;
+    height: 30px;
+    padding: 3px 3px 3px 7px;
+    gap: 10px;
+    border-radius: 5px;
+    opacity: 0px;
+    background: #FEFEFE;
+    margin-right: 20px;
+    box-shadow: 0px 0px 0px 0.5px #0000000D;
+    color: black;
+
+    box-shadow: 0px 0.5px 2.5px 0px #0000004D;
+    border: 0;
+
+}
+
+.rates {
+    padding-right: 30px;
+}
+
+button.btn.btn-secondary.dropdown-toggle.category {
+    width: 120px;
+    height: 30px;
+    padding: 3px 3px 3px 7px;
+    gap: 10px;
+    border-radius: 5px;
+    opacity: 0px;
+    background: #FEFEFE;
+    margin-right: 20px;
+    box-shadow: 0px 0px 0px 0.5px #0000000D;
+    color: black;
+
+    box-shadow: 0px 0.5px 2.5px 0px #0000004D;
+    border: 0;
+
+}
+
+.categories {
+    padding-right: 18px;
+
+}
+
+.search-icons {
+    position: absolute;
+    left: 87%;
+}
+
+.searchbars input {
+    width: 250px;
+    height: 25px;
+    padding: 3px 7px 3px 7px;
+    gap: 5px;
+    border-radius: 5px;
+    opacity: 0.4px;
+    box-shadow: 0px 0px 0px 0.5px #0000000D;
+    box-shadow: 0px 0.5px 2.5px 0px #0000004D;
+    border: 0;
+    background: #E0E0E0;
+
+}
+
+.searchbars i {
+    color: #b4b4b4;
+}
+
+.logo-heading {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    color: #333333;
+
+
+}
+
+.less-than img {
+    padding-right: 15px;
+}
+
+.ribbon-sec {
+    position: absolute;
+    top: 0;
+    left: 86%;
+}
+
+
+.meal-lists.overflow-auto {
+    background-color: white;
+}
+
+/* recipe-view */
+
+
+.meal-heading.d-flex.bg-white {
+    height: 120px;
+}
+
+.name p {
+    font-size: 10px;
+}
+
+.meal-box img {
+    height: 97px;
+}
+
+/* .box-1{
+    height: 100vh;
+background-color: white;
+    border-radius: 10px;
+} */
+
+
+.recipetop-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.chicken-name {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35.2px;
+    text-align: center;
+
+}
+
+.chicken-heading {
+    padding-left: 20px;
+}
+
+.sharing-button {
+    padding-right: 20px;
+}
+
+.texture {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #4F4F4F;
+    padding-left: 20px;
+
+
+}
+
+.recipe-video {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-box {
+    width: 130px;
+    height: 70px;
+    gap: 0px;
+    border-radius: 8px;
+    opacity: 0px;
+    background-color: #F3F3F3;
+
+}
+
+.top-border {
+    border: 1px solid black;
+    width: 350px;
+    height: 443px;
+    left: 440px;
+    gap: 0px;
+    border-radius: 8px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    margin-left: 10px;
+    margin-right: 30px;
+
+}
+
+.recipe-video {
+    margin-left: 15px !important;
+}
+
+.video-box img {
+    width: 120%;
+
+}
+
+.food-slider {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.direction-heading {
+
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: left;
+    color: #333333;
+
+
+
+}
+
+.seven-steps {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #333333;
+
+}
+
+.direction {
+    margin-top: 20px !important;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    height: 174px;
+    padding: 12px 0px 0px 0px;
+    gap: 24px;
+    border-radius: 16px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #E0E0E0;
+    margin-left: 30px;
+}
+
+.ingredients {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #4F4F4F;
+    margin-top: 4rem;
+
+}
+
+.salts img {
+    margin-left: 20px;
+}
+
+.edit-btn {
+    margin-right: 20px;
+}
+
+.delete-box {
+    width: 25px;
+    height: 30px;
+    padding: 3px 3px 3px 7px;
+    gap: 10px;
+    border-radius: 5px;
+    opacity: 0px;
+    box-shadow: 0px 0px 0px 0.5px #0000000D;
+
+    box-shadow: 0px 0.5px 2.5px 0px #0000004D;
+    background: #FEFEFE;
+    margin-right: 15px;
+
+}
+
+.edit-box {
+    width: 54px;
+    height: 30px;
+    padding: 3px 3px 3px 7px;
+    gap: 10px;
+    border-radius: 5px;
+    opacity: 0px;
+    box-shadow: 0px 0px 0px 0.5px #0000000D;
+
+    box-shadow: 0px 0.5px 2.5px 0px #0000004D;
+    background: #FEFEFE;
+
+
+}
+
+.ingredients-box {
+    width: 135%;
+}
+
+/* 
+.ingredients-section{
+    background-color: white;
+    height: 200px;
+} */
+.ingredients-item {
+    width: 330px;
+    height: 528px;
+    padding: 24px 16px 24px 16px;
+    gap: 20px;
+    border-radius: 16px;
+    opacity: 0px;
+    background: #FFFFFF;
+    margin-top: 2rem;
+
+}
+
+.ingredients-grocrey li {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    color: #4F4F4F;
+
+
+
+}
+
+.notification {
+    width: 308px;
+    height: 324px;
+    padding: 24px 16px 24px 16px;
+    gap: 20px;
+    border-radius: 16px;
+    opacity: 0px;
+    background: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.calories {
+    width: 130px;
+    height: 54px;
+    gap: 0px;
+    border-radius: 8px;
+    opacity: 0px;
+    background: #F3F3F3;
+
+}
+
+.no-calories {
+    text-align: center;
+}
+
+.detail-link {
+    text-align: center;
+    margin-top: 27px;
+    text-decoration: none;
+}
+
+.cooper {
+    width: 308px;
+    height: 378px;
+    padding: 22px 16px 22px 16px;
+    gap: 20px;
+    border-radius: 16px;
+    opacity: 0px;
+    background: #FFFFFF;
+    margin-top: 2rem;
+
+
+}
+
+
+.notes {
+    width: 308px;
+    height: 312px;
+    padding: 22px 16px 22px 16px;
+    gap: 20px;
+    border-radius: 16px;
+    opacity: 0px;
+    background: #FFFFFF;
+    margin-top: 2rem;
+
+
+}
+
+.ingredients-heading {
+
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    color: #000000;
+
+}
+
+.no-calories {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.chef-name {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    text-align: center;
+    color: #333333;
+    padding-top: 15px;
+
+}
+
+.chefweb-link {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #268EFF;
+    padding-left: 25px;
+
+}
+
+.copywrite {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    color: #4F4F4F;
+    padding-top: 15px;
+
+
+}
+
+.notes-description {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #4F4F4F;
+    padding-top: 20px;
+
+}
+
+.prep-min {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    color: #333333;
+
+
+}
+
+.prep-time {
+
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #333333;
+
+
+}
+
+.direction-main {
+    margin-left: 30px;
+    margin-top: 3rem;
+}
+
+.edit-btn {
+    height: 30px;
+}
+
+.editclass {
+    margin-right: 20px;
+}
