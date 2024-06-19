@@ -151,9 +151,10 @@ linear-gradient(180deg, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0) 100
 }
 
 button.btn.open-book {
+    font-family: Inter;
     color: #FEFEFE;
     width: 210px;
-    background-color: #e01010db;
+    background-color: #E01010;
     margin-top: -10px;
     opacity: 90%;
 }
@@ -172,8 +173,10 @@ button.btn.open-book {
 }
 
 input[type="text"] {
-    padding-left: 40px;
-    background-color: #E0E0E0;
+    font-family: inter;
+    padding-left: 35px;
+    /* background-color: #E0E0E0; */
+    background-color: #e0e0e0ed;
     border: 0;
     border-radius: 5px;
     box-shadow: 0px 0px 0px 0.5px #0000000D;
@@ -185,6 +188,11 @@ input[type="text"] {
     outline: 0;
     width: 225px;
 }
+::placeholder {
+    color: #00000040;
+    font-size: 15px;
+}
+
 
 .searching {
     /* position: fixed;
@@ -197,14 +205,14 @@ input[type="text"] {
     left: 41%;
     bottom: 130%;
 
-
 }
 
 i.fa-solid.fa-magnifying-glass {
-    color: grey;
+    /* color: grey; */
     z-index: 8;
     font-size: 14px;
     padding-top: 2px;
+    color:#726e6e;
 
 }
 
@@ -321,7 +329,7 @@ ul#myTab {
     top: -5%;
     border: 0;
     width: 303px;
-    height: 22px;
+    height: 20px;
     padding: 1px 0px 0px 0px;
     gap: 0px;
     opacity: 0px;
@@ -332,7 +340,7 @@ ul#myTab {
 }
 
 button#profile-tab {
-    height: 22px;
+    height: 23px;
     border-radius: 6px;
     color: #000000;
     padding: 5px;
@@ -340,8 +348,10 @@ button#profile-tab {
     padding: 0;
     border-radius: 5px;
     border: 0;
-    font-size: 14px;
+    font-size: 13px;
     margin-left: 1px;
+    font-family: inter;
+
 }
 
 button#home-tab {
@@ -354,8 +364,9 @@ button#home-tab {
     padding: 0;
     border-radius: 5px;
     border: 0;
-    font-size: 14px;
+    font-size: 13px;
     margin-left: 1px;
+    font-family: inter;
 }
 
 section.shopping-products {
