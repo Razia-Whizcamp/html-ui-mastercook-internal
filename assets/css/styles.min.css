@@ -20029,11 +20029,11 @@ fieldset:disabled .btn {
     }
 
     #main-wrapper[data-layout=vertical][data-header-position=fixed] .app-header {
-        width: calc(100% - 270px)
+        width: calc(100% - 340px)
     }
 
     #main-wrapper[data-layout=vertical][data-sidebartype=full] .body-wrapper {
-        margin-left: 270px
+        margin-left: 358px
     }
 }
 
