@@ -769,7 +769,7 @@ label.upload-btn {
 }
 
 .Ingredients-steps.edit-page ul li {
-    padding: 0px 0px;
+    padding: 3px 0px;
     list-style: none;
 }
 .edit-ingredients {
@@ -779,11 +779,82 @@ label.upload-btn {
 .edit-author button.close-icon {
     position: absolute;
     right: -20px;
-    bottom:7px;
+    bottom:4px;
 }
 .edit-ingredients input.search-box.form-control {
-    padding: 5px 7px;
+    padding: 3px 7px;
+    box-shadow: rgb(0 0 0 / 7%) 0px 3px 6px, rgb(0 0 0 / 5%) 0px 3px 6px;
 }
 .edit-author input.search-box.form-control {
-    padding: 5px 7px;
+    padding: 3px 7px;
+    box-shadow: rgb(0 0 0 / 7%) 0px 3px 6px, rgb(0 0 0 / 5%) 0px 3px 6px;
+}
+
+.add-images .box-border.box-border-add {
+    height: 139px;
+}
+
+.add-directions button.close-icon {
+    position: absolute;
+    right: 0;
+    bottom: 9px;
+}
+
+.add-directions {
+    position: relative;
+}
+
+.recepi-step-number-add {
+    border: 1px dashed #534b4d6b;
+    padding: 26px 2px;
+    border-radius: 12px;
+    /* margin-top: 1rem; */
+    font-size: 12px;
+    text-align: center;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 138px;
+}
+.recepi-step-number-add label.upload-btn {
+    padding: 5px 14px;
+}
+.add-notes {
+    border: 1px dashed #534b4d6b;
+    padding: 26px 2px;
+    border-radius: 12px;
+    margin-top: 1rem;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 138px;
+}
+.add-notes label.upload-btn {
+    padding: 6px 18px;
+}
+.add-auther-img {
+    border: 1px dashed #534b4d6b;
+    padding: 26px 2px;
+    border-radius: 12px;
+    /* margin-top: 1rem; */
+    font-size: 12px;
+    text-align: center;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.edit-author {
+    position: relative;
+}
+
+.btn.btn-light {
+    box-shadow: rgb(0 0 0 / 7%) 0px 3px 6px, rgb(0 0 0 / 19%) 0px 3px 6px;
 }

@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,10 +48,11 @@
 
                         <div class="box-1">
                           <div class="box-border">
-                            <p class="import" onclick="document.getElementById('fileInput').click();"><u>Import Shopping list</u>
+                            <p class="import" onclick="document.getElementById('fileInput').click();"><u>Import Shopping
+                                list</u>
                             <p class="or-cen">or</span></p>
                             <!-- <button class="cook-book">Create new cookbook</button> -->
-                            <button class="cook-book" onclick="document.getElementById('fileInput').click();">Create
+                            <button class="cook-book" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create
                               Shopping List</button>
                             <input type="file" id="fileInput" class="hidden" accept="image/*"
                               onchange="handleFileSelect(event)">
@@ -254,9 +256,11 @@
 
                         <div class="box-1">
                           <div class="box-border">
-                            <p class="import" onclick="document.getElementById('fileInput').click();"><u>Import Shopping list</u>
+                            <p class="import" onclick="document.getElementById('fileInput').click();"><u>Import Shopping
+                                list</u>
                             <p class="or-cen">or</span></p>
-                            <button class="cook-book">Create new cookbook</button>
+                            <button class="cook-book" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create new
+                              cookbook</button>
                           </div>
                         </div>
 
@@ -492,8 +496,109 @@
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+      <!-- modal-start -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h1 class="modal-title fs-5 reset" id="staticBackdropLabel">Create new Cookbook</h1> -->
+              <button type="button" class="btn-close section-closing" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+              <h1 class="modal-title fs-5 reset" id="staticBackdropLabel">Create shopping list</h1>
+
+              <div class="input-field d-flex justify-content-center">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Shopping list name">
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary send-link" data-bs-target="#exampleModal"
+                  data-bs-toggle="modal">Create now</button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <a href="#" class="need">Need Help?</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+          <div class="modal-content reset-email">
+            <div class="modal-header">
+              <!-- <span class="verification">
+                   <img src="./Images/sucess-send.svg" alt="sucess-send">
+               </span> -->
+              <button type="button" class="btn-close section-closing" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+
+            </div>
+            <div class="modal-body">
+
+
+              <span class="verification">
+                <img src="./Images/sucess-send.svg" alt="sucess-send">
+              </span>
+              <p class="password-reset">Shopping list created<br>
+                successfully.</p>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary Check-email" data-bs-dismiss="modal">
+                  <a href="#" class="check-email" style="margin-top: 27px;">Go to Shooping List</a>
+                </button>
+              </div>
+            </div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal-end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </section>
-  </div>
 
 
 
