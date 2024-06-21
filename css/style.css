@@ -143,7 +143,7 @@ span.deleteicon input {
     font-size: 12px;
     box-shadow: 0 0 2px #414141;
     cursor: pointer;
-    
+
 }
 
 .form-control:not(:valid)~.close-icon {
@@ -261,7 +261,7 @@ li.nav-item {
 
 
 .recepie-timing-label .form-select {
-  
+
     background-image: url("../Images/Combo-Box-Button.png");
     background-size: 27px 27px;
     padding: 4px 6px;
@@ -486,6 +486,7 @@ li.sidebar-item img {
     padding: 27px 31px;
     border-radius: 8px;
 }
+
 .container-fluid.quik-meal-video-content {
     max-width: 1346px !important;
 }
@@ -508,6 +509,7 @@ li.sidebar-item img {
     border-radius: 8px;
     padding: 13px 17px;
 }
+
 .recipi-details {
     background: #F3F3F3;
     border-radius: 7px;
@@ -520,9 +522,10 @@ li.sidebar-item img {
     margin-top: 9px;
 }
 
-.recipi-details p ,h6 {
- margin-bottom: 0;
- font-size: 12px;
+.recipi-details p,
+h6 {
+    margin-bottom: 0;
+    font-size: 12px;
 }
 
 .recipi-details h6 {
@@ -530,7 +533,8 @@ li.sidebar-item img {
     font-weight: 600;
     font-size: 13px;
 }
-   .recepie-timing {
+
+.recepie-timing {
     display: flex;
     gap: 8px;
     align-items: center;
@@ -539,6 +543,7 @@ li.sidebar-item img {
 iframe.video-screen {
     border-radius: 13px;
 }
+
 .recepe-video-content .slick-next.slick-arrow {
     right: -4px;
 }
@@ -590,6 +595,7 @@ iframe.video-screen {
     padding: 22px 35px;
     border-radius: 16px;
 }
+
 .Ingredients-steps ul {
     list-style: disc;
 }
@@ -597,14 +603,17 @@ iframe.video-screen {
 .Ingredients-steps ul li {
     padding: 7px 4px;
 }
+
 .quik-meal-body-content {
     padding-top: 3rem;
 }
+
 .heading-meal h4 {
     font-size: 26px;
     font-weight: 700;
     color: #000;
 }
+
 .Notes img {
     width: 100%;
 }
@@ -614,69 +623,77 @@ iframe.video-screen {
     height: 160px;
     border-radius: 50%;
 }
+
 .detail-tips {
     padding-left: 19px;
 }
+
 .delet-content {
     text-align: center;
 }
 
 
 .searchBox-fakeInput {
-	background: white;
-	border: 1px solid #d6dadc;
-	border-radius: 8px;
-	display: table;
+    background: white;
+    border: 1px solid #d6dadc;
+    border-radius: 8px;
+    display: table;
 }
 
 .searchBox-fakeInput.is-focussed {
     border: 1px solid #9e9e9e38 !important;
     border-radius: 8px;
 }
+
 .searchBox-inputWrapper,
 .searchBox-clearWrapper {
-	width: 100%;
-	display: table-cell;
-	vertical-align: middle;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
 }
+
 .searchBox-input {
- 	background-color: transparent;
-	border: none;
-  box-shadow: none;
-  outline: none;
-	width: 100%;
-	padding: 0.5rem;
-	font-size: inherit;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: inherit;
 }
+
 .searchBox-input:focus {
-  outline: none;
-	background: #FFF;
-  box-shadow: none;
+    outline: none;
+    background: #FFF;
+    box-shadow: none;
 }
+
 .searchBox-clearWrapper {
-  padding-right: 0.5rem;
+    padding-right: 0.5rem;
 }
+
 .searchBox-clear {
-	color: #746a6a;
-	padding: 0;
-	cursor: pointer;
-	font-size: inherit;
-	cursor: pointer;
-	line-height: 1.5;
- 	-webkit-transition: all 3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+    color: #746a6a;
+    padding: 0;
+    cursor: pointer;
+    font-size: inherit;
+    cursor: pointer;
+    line-height: 1.5;
+    -webkit-transition: all 3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     font-size: 16px;
 }
+
 .searchBox-clearInput:hover {
-	color: #AAA;
+    color: #AAA;
 }
 
 input.form-control.searchBox-input.js-searchBox-input {
     border: 0;
     box-shadow: none;
-   
+
 }
 
 span.input-group-text {
@@ -698,7 +715,7 @@ span.input-group-text {
 .recepie-timing-label .input-group {
     border: 1px solid #eee;
     border-radius: 10px;
-   
+
 
 }
 
@@ -707,16 +724,19 @@ span.input-group-text {
     height: 135px;
     border-radius: 8px;
 }
+
 .edit-icons img {
     width: 32px;
     height: 33px;
     border-radius: 8px;
 }
+
 .edit-icons {
     position: absolute;
     bottom: 8px;
     left: 17px;
 }
+
 .select-cover-img {
     position: relative;
     margin-bottom: 12px;
@@ -752,6 +772,7 @@ label.upload-btn {
     font-weight: 700;
     font-size: 25px;
 }
+
 .edit-icon-pic {
     position: absolute;
     bottom: 42%;
@@ -765,13 +786,14 @@ label.upload-btn {
 .Ingredients-steps button.close-icon {
     position: absolute;
     right: -20px;
-    bottom:7px;
+    bottom: 7px;
 }
 
 .Ingredients-steps.edit-page ul li {
     padding: 3px 0px;
     list-style: none;
 }
+
 .edit-ingredients {
     position: relative;
 }
@@ -779,12 +801,14 @@ label.upload-btn {
 .edit-author button.close-icon {
     position: absolute;
     right: -20px;
-    bottom:4px;
+    bottom: 4px;
 }
+
 .edit-ingredients input.search-box.form-control {
     padding: 3px 7px;
     box-shadow: rgb(0 0 0 / 7%) 0px 3px 6px, rgb(0 0 0 / 5%) 0px 3px 6px;
 }
+
 .edit-author input.search-box.form-control {
     padding: 3px 7px;
     box-shadow: rgb(0 0 0 / 7%) 0px 3px 6px, rgb(0 0 0 / 5%) 0px 3px 6px;
@@ -818,9 +842,11 @@ label.upload-btn {
     width: 175px;
     height: 138px;
 }
+
 .recepi-step-number-add label.upload-btn {
     padding: 5px 14px;
 }
+
 .add-notes {
     border: 1px dashed #534b4d6b;
     padding: 26px 2px;
@@ -833,9 +859,11 @@ label.upload-btn {
     align-items: center;
     height: 138px;
 }
+
 .add-notes label.upload-btn {
     padding: 6px 18px;
 }
+
 .add-auther-img {
     border: 1px dashed #534b4d6b;
     padding: 26px 2px;
@@ -851,10 +879,293 @@ label.upload-btn {
     height: 160px;
     border-radius: 50%;
 }
+
 .edit-author {
     position: relative;
 }
 
 .btn.btn-light {
     box-shadow: rgb(0 0 0 / 7%) 0px 3px 6px, rgb(0 0 0 / 19%) 0px 3px 6px;
+}
+
+
+
+
+
+/* add */
+
+
+
+
+
+
+
+
+
+
+
+.reset {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: center;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    width: 99%;
+
+}
+
+.modal-content {
+
+    width: 376px !important;
+    height: 210px !important;
+    border-radius: 16px !important;
+}
+
+.reset-content {
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #333333;
+    padding-left: 41px;
+    padding-right: 41px;
+
+}
+
+input#exampleInputEmail1 {
+    width: 206px;
+    height: 22px;
+    padding: 3px 3px 3px 7px;
+    gap: 5px;
+    border-radius: 5px;
+    opacity: 0px;
+    background: #FEFEFE;
+    box-shadow: 0px 0px 0px 3px #007AFF80;
+
+    box-shadow: 0px 0px 0px 0.5px #0000000D;
+
+    box-shadow: 0px 0.5px 2.5px 0px #0000004D;
+
+}
+
+input#exampleInputEmail1 {
+    margin-top: 23px;
+}
+
+button.btn.btn-secondary.send-link {
+    height: 33px;
+    padding: 3px 13px 6px 13px;
+
+    gap: 0px;
+    border-radius: 5px;
+    opacity: 0px;
+    background: linear-gradient(0deg, var(--brand-color-primary, #E01010), var(--brand-color-primary, #E01010)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0px 0px 0px 0.5px #007AFF1F;
+
+    box-shadow: 0px 1px 2.5px 0px #007AFF3D;
+    border: 0;
+    margin-top: 20px;
+
+}
+
+.modal-footer {
+    justify-content: center !important;
+}
+
+.need {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    color: #268EFF;
+
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-footer {
+    border-top: 0 !important;
+}
+
+
+.modal-content.reset-email {
+
+    height: 225px !important;
+    width: 257px !important;
+}
+
+.verification {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.password-reset {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #333333;
+    margin-top: 20px;
+}
+
+
+button.btn.btn-secondary.Check-email {
+    /* width:119px; */
+    height: 37px;
+    padding: 6px 10px 6px 10px;
+    gap: 0px;
+    border-radius: 5px;
+    opacity: 0px;
+    background: linear-gradient(0deg, var(--brand-color-primary, #E01010), var(--brand-color-primary, #E01010)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 0;
+
+}
+
+.check-email a {
+    color: white;
+    text-decoration: none;
+
+}
+
+/* .verification img{
+    margin-top: 20px;
+} */
+.modal-body {
+    padding: 0 !important;
+
+}
+
+
+button.btn-close.section-closing {
+    width: 20px !important;
+    height: 22px !important;
+    gap: 0px;
+    opacity: 0px;
+    background: #F54D4D;
+    border-radius: 50%;
+    padding: 0;
+    margin-top: 5px;
+    margin-right: 2px;
+    color: white;
+}
+
+.check-email {
+    color: white;
+}
+
+h1#staticBackdropLabel {
+    font-size: 26px !important;
+}
+
+
+
+
+
+
+
+/* new-try */
+
+
+.p.fw-bold.chicken-name {
+
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: left;
+    color: #333333;
+
+
+}
+
+.mix-content {
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: #828282;
+
+
+}
+
+.chicken-container img {
+    height: 97px !important;
+    width: 97px !important;
+    padding-top: 10px;
+    padding-left: 10px;
+
+
+}
+
+.d-flex.sidebar-chicken {
+    height: 110px;
+}
+
+
+span.star-pic img {
+    height: 10px;
+    width: 10px;
+
+}
+
+p.fw-bold.chicken-name {
+    padding-bottom: 0 !important;
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+.five-ago {
+    padding-right: 10px;
+}
+
+
+.modal-content.quick-meal {
+
+    height: 160px !important;
+
+
+}
+
+
+button.btn.btn-light.delete {
+    color: #E01010;
+    margin-top: 9px;
+    background-color: transparent;
+}
+
+
+button.btn.btn-light.not-delete {
+    margin-top: 9px;
+
+}
+
+
+
+button.btn-close.section-closing {
+    width: 20px !important;
+    height: 22px !important;
+    gap: 0px;
+    opacity: 0px;
+    background: #F54D4D;
+    border-radius: 50%;
+    padding: 0;
+    margin-top: 5px;
+    margin-right: 2px;
+    color: white;
 }

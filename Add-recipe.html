@@ -420,7 +420,8 @@
                                 <div class="">
 
                                     <div class="d-flex justify-content-center align-items-center">
-                                        <button type="button" class="btn btn-primary"> Save Changes
+                                        <button type="button" class="btn btn-primary" data-bs-target="#exampleModal"
+                                            data-bs-toggle="modal"> Save Changes
                                         </button>
                                     </div>
 
@@ -1174,14 +1175,37 @@
         </div> <!-- End of .body-wrapper -->
     </div> <!-- End of .page-wrapper -->
 
+    <!-- modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content reset-email">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close section-closing" data-bs-dismiss="modal" aria-label="Close">
+                        <span><i class="fa-solid fa-xmark"></i></span></button>
+
+                </div>
+                <div class="modal-body">
 
 
-
-
-
-
-
-
+                    <span class="verification">
+                        <img src="./Images/sucess-send.svg" alt="sucess-send">
+                    </span>
+                    <p class="password-reset">Recipe added<br>
+                        successfully
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary Check-email" data-bs-dismiss="modal">
+                            <a href="#" class="check-email" style="margin-top: 27px;">Go to Quick Meals</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
 
     <!-- Load jQuery first -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

@@ -576,8 +576,8 @@ border: 0;
 
 
 button.btn-close.section-closing{
-    width: 14px !important;
-height: 14px !important;
+    width: 20px !important;
+height: 22px !important;
 gap: 0px;
 opacity: 0px;
 background: #F54D4D;
@@ -585,10 +585,120 @@ border-radius: 50%;
 padding: 0;
 margin-top: 5px;
     margin-right: 2px;
+    color: white;
 }
 .check-email{
     color: white;
 }
 h1#staticBackdropLabel{
     font-size: 26px !important;
+}
+
+/* 
+.modal-header{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.uploading{
+    padding-left: 20px !important;
+    padding-top: 20px !important;
+}
+
+.progress{
+    width: 80%;
+    margin-left: 44px;
+    background-color: red !important;}
+
+
+    .modal-content.progressbar{
+        height: 500px !important;
+    } */ */
+
+
+/* modal second  */
+
+.modal-header {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.uploading {
+    padding-left: 20px !important;
+    padding-top: 20px !important;
+}
+
+.progress {
+    width: 80%;
+    margin-left: 25px;
+}
+
+
+.modal-content.progressbar {
+    width: 291px !important;
+    height:167px !important;
+
+}
+
+
+.modal-footer{
+    padding: 0 !important;
+}
+
+.progress-bar{
+    background-color: red !important;
+}
+
+
+.cookbook-uploads{
+font-family: Inter;
+font-size: 14px;
+font-weight: 600;
+line-height: 19.6px;
+text-align: left;
+color:#333333;
+
+
+}
+
+.marble-box img{
+    height: 33px;
+}
+.Upload-head{
+    padding-top: 15px;
+}
+.uploading-des{
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+text-align: left;
+color: #828282;
+padding-left: 10px;
+}
+.upload-percent{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+}
+
+.uploading-number{
+    font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+text-align: left;
+color: #828282;
+padding-right: 10px;
+
+}
+
+.btn.cancel-upload{
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+text-align: center;
+color:  #333333;
+
+
 }

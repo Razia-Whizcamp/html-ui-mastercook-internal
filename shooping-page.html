@@ -16,6 +16,9 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -48,14 +51,21 @@
 
                         <div class="box-1">
                           <div class="box-border">
-                            <p class="import" onclick="document.getElementById('fileInput').click();"><u>Import Shopping
+                            <!-- <p class="import" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                              <u>Import Shopping
                                 list</u>
+                            </p> -->
+                            <p class="import" onclick="document.getElementById('fileInput').click();">
+                              <u>Import Shopping list</u>
+                          </p>
+                          <input type="file" id="fileInput" class="hidden" accept=".txt,.csv">
+                            <input type="file" id="file-input" class="hidden">
+
                             <p class="or-cen">or</span></p>
                             <!-- <button class="cook-book">Create new cookbook</button> -->
                             <button class="cook-book" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create
                               Shopping List</button>
-                            <input type="file" id="fileInput" class="hidden" accept="image/*"
-                              onchange="handleFileSelect(event)">
+
                           </div>
                         </div>
 
@@ -96,11 +106,12 @@
                               <p class="recipe-time">Created: 5 days ago</p>
                             </div>
                           </div>
-                          <!-- <button type="button" class="btn open-book">Open shopping list</button> -->
-                          <a href="Shopping-list.html">
+                          <button type="button" class="btn open-book" data-bs-target="#exampleModalToggle"
+                            data-bs-toggle="modal">Open shopping list</button>
+                          <!-- <a href="Shopping-list.html">
                             <button type="button" class="btn open-book">Open Shopping List</button>
 
-                          </a>
+                          </a> -->
 
                         </div>
 
@@ -256,13 +267,18 @@
 
                         <div class="box-1">
                           <div class="box-border">
-                            <p class="import" onclick="document.getElementById('fileInput').click();"><u>Import Shopping
-                                list</u>
+                                <p class="import" onclick="document.getElementById('fileInput').click();">
+                                  <u>Import Shopping list</u>
+                              </p>
+                              <input type="file" id="fileInput" class="hidden" accept=".txt,.csv">
                             <p class="or-cen">or</span></p>
+
                             <button class="cook-book" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create new
                               cookbook</button>
                           </div>
                         </div>
+
+
 
 
                         <div class="box-2">
@@ -507,14 +523,20 @@
 
 
       <!-- modal-start -->
+
+
+
+      b
+
+
       <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
               <!-- <h1 class="modal-title fs-5 reset" id="staticBackdropLabel">Create new Cookbook</h1> -->
-              <button type="button" class="btn-close section-closing" data-bs-dismiss="modal"
-                aria-label="Close"></button>
+              <button type="button" class="btn-close section-closing" data-bs-dismiss="modal" aria-label="Close">
+                <span><i class="fa-solid fa-xmark"></i></span></button>
             </div>
 
             <div class="modal-body">
@@ -543,8 +565,9 @@
               <!-- <span class="verification">
                    <img src="./Images/sucess-send.svg" alt="sucess-send">
                </span> -->
-              <button type="button" class="btn-close section-closing" data-bs-dismiss="modal"
-                aria-label="Close"></button>
+              <button type="button" class="btn-close section-closing" data-bs-dismiss="modal" aria-label="Close">
+                <span><i class="fa-solid fa-xmark"></i></span>
+              </button>
 
             </div>
             <div class="modal-body">
@@ -570,48 +593,106 @@
 
 
 
+      <!-- Modal -->
 
 
 
+      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content progressbar">
+            <!-- <div class="modal-header">
+  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+    <span><img src="./Images/marble.png" alt="marble"></span>
+  </h1>
+  <div>
+    <p class="uploading">Shopping list is uploading...
+      <br>
+      Fruits
+    </p>
+  </div> 
+  <button type="button" class="btn-close section-closing" data-bs-dismiss="modal" aria-label="Close">
+    <span><i class="fa-solid fa-xmark"></i></span>
 
+  </button>
+</div> -->
+            <div class="modal-body">
+              <div class="d-flex justify-content-around Upload-head">
+                <div class="marble-box">
+                  <img src="./Images/marble.png" alt="marble">
+                </div>
+                <div>
+                  <p class="cookbook-uploads">Cookbook is uploading...</p>
+                </div>
+                <div>
+                  <button type="button" class="btn-close section-closing" data-bs-dismiss="modal" aria-label="Close">
+                    <span><i class="fa-solid fa-xmark"></i></span>
+                </div>
 
+              </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+              <div class="upload-percent">
+                <div>
+                  <p class="uploading-des">Uploading...</p>
+                </div>
+                <div>
+                  <p class="uploading-number">54%</p>
+                </div>
+              </div>
+              <div>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar" style="width: 25%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn cancel-upload " data-bs-target="#exampleModalToggle2 " data-bs-toggle="modal">Cancel
+                Uploading</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+  Hide this modal and show the first with the button below.
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+</div>
+</div>
+</div>
+</div> -->
+      <!-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first
+  modal</button> -->
 
 
 
   </section>
-
-
-
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script>
-    function handleFileSelect(event) {
-      const file = event.target.files[0];
-      if (file) {
+    // script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const fileInput = document.getElementById('fileInput');
+
+    fileInput.addEventListener('change', handleFileSelect);
+});
+
+function handleFileSelect(event) {
+    const file = event.target.files[0];
+    if (file) {
         console.log('Selected file:', file);
         // You can add further functionality here, like uploading the file to a server or displaying a preview
-      }
     }
+}
+
   </script>
 
   <script src="./js/script.js"></script>
